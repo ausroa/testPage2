@@ -1,0 +1,57 @@
+.slideShowContainer{
+  width: 100%;
+  height: 100%;
+}
+
+.row2 {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+
+  .row2Content {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+  }
+}
+
+.row3 {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+
+  .row3Content {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+  }
+}
+
+.tileHeightAdjustment {
+  top: -788px;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .row2 {
+    .row2Content {
+      height: 200px;
+    }
+  }
+
+  .row3 {
+    .row3Content {
+      height: 200px;
+    }
+  }
+
+  .buttonStyle {
+    padding: 10px;
+  }
+}
+
