@@ -37,12 +37,19 @@ export class ProductService {
       displayImgs: {}
     },
     {
-      name: 'backpack',
+      name: 'original pack ballistic',
       img: 'assets/pictures/shop_pack.jpg',
       price: '0.00',
-      displayImgs: {}
+      displayImgs: {
+        img1: 'assets/pictures/pack_crop_1.jpg',
+        img2: 'assets/pictures/pack_crop_2.jpg',
+        img3: 'assets/pictures/pack_crop_3.jpg',
+        img4: 'assets/pictures/pack_crop_4.jpg',
+        img5: 'assets/pictures/pack_devin_1.jpg'
+      }
     },
-    {name: 'passport',
+    {
+      name: 'passport',
       img: 'assets/pictures/shop_passport.jpg',
       price: '0.00',
       displayImgs: {}
