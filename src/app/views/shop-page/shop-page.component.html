@@ -1,0 +1,10 @@
+<div class="products-container" @fadeIn>
+  <div class="product-container">
+    <div class="product" *ngFor="let product of products; index as i">
+      <img src="{{product.img}}" alt="" (click)="testRun(product)">
+      <span>{{product.name}}</span>
+      <!--<span id="price">{{product.price | currency}}</span>-->
+    </div>
+  </div>
+
+</div>

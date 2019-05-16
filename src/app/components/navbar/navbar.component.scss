@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
 
 .navbar {
-  background-color: black;
+  background-color: white;
   height: 68px;
   padding: 0;
   margin: 0;
   font-family: 'Nanum Gothic Coding', monospace;
   font-weight: bold;
+
+  #logo {
+    padding-left: 200px;
+  }
 }
 
 .navbarLinks {
   position: relative;
 }
 
-.navbarLinks > a {
-  margin-right: 15px;
-  color: white;
-  text-transform: uppercase;
-  font-size: 15px;
+.navbarLinks {
+  a {
+    margin-right: 55px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  a:last-child {
+    padding-right: 200px;
+  }
 }

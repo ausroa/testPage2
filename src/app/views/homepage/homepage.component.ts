@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {trigger, state, style, animate,transition} from '@angular/animations';
+import {trigger, state, style, animate, transition} from '@angular/animations';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'homepage',
@@ -19,17 +20,19 @@ export class HomepageComponent implements OnInit {
   public tiles: string[];
   public soloTile: number[];
   public row2ContentImg: string;
+  public autoPlay: boolean;
 
-  constructor() {
+  constructor(private router: Router, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
 
 
     this.tilesUrls = [
-      'assets/pictures/3_side_lawson.JPG',
-      'assets/pictures/5_lawson_detail.JPG',
-      'assets/pictures/5_lawson_model1.JPG',
+      'assets/pictures/banner1.jpg'
+      // 'assets/pictures/3_side_lawson.JPG',
+      // 'assets/pictures/5_lawson_detail.JPG',
+      // 'assets/pictures/5_lawson_model1.JPG',
       // 'assets/pictures/6_lawson_model2.JPG',
       // 'assets/pictures/7_lawson_charlotte.JPG',
       // 'assets/pictures/pack_devin_1.jpg'
@@ -46,5 +49,11 @@ export class HomepageComponent implements OnInit {
     ];
 
     this.row2ContentImg = 'assets/pictures/pack_devin_1.jpg';
+
+    this.autoPlay = false;
+  }
+
+  onSelect(): void {
+    this.router.navigate(['shop']);
   }
 }

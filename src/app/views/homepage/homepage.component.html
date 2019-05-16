@@ -1,15 +1,51 @@
-<div @fadeIn class="slideShowContainer">
-  <slideshow [imageUrls]="tilesUrls"
-             [height]="'100%'"></slideshow>
-</div>
-<div class="row2" @fadeIn>
-  <a href="">
-    <div class="row2Content" style="background-image: url('assets/pictures/pack_devin_1.jpg');"></div>
-  </a>
-</div>
-<div class="row3" @fadeIn>
-  <a href="">
-    <div class="row3Content" style="background-image: url('assets/pictures/Spring-1000x665.jpg');"></div>
-  </a>
-</div>
+<!--<audio *ngIf="autoPlay" src="assets/pictures/01_FANCY.mp3" autoplay="true"></audio>-->
+<!--<div @fadeIn class="slideShowContainer">-->
+  <!--<slideshow [imageUrls]="tilesUrls"-->
+             <!--[height]="'100%'"-->
+             <!--[backgroundSize]="'contain'"></slideshow>-->
+<!--</div>-->
 
+<!--<div style="position: absolute; top: 160px; width: 100%">-->
+  <!--<div style="position: absolute; top: 545px; font-weight: bold; color: white; left: 235px; font-size: 25px">-->
+    <!--<div style="position: relative; top: 10px; ">POISE</div><br>-->
+    <!--<div>Autumn/Winter 2019</div>-->
+  <!--</div>-->
+  <!--<button class="btn" style="position: absolute; top: 621px; left: 235px; font-weight: bold; border: none;" (click)="onSelect()">Explore</button>-->
+
+<!--</div>-->
+<div class="row2" @fadeIn>
+    <a href="">
+      <div class="row1Content" style="background-image: url('assets/pictures/banner1.jpg')"></div>
+    </a>
+    <div class="button-container">
+          <div>
+            <span>POISE</span><br><br>
+            <span>Autumn/Winter 2019</span>
+          </div>
+          <button class="btn" (click)="onSelect()">Explore</button>
+        </div>
+      <div class="row2" @fadeIn>
+        <a routerLink="shop">
+          <div class="row2Content" style="background-image: url('assets/pictures/banner2_lawson.jpg')"></div>
+        </a>
+        <div class="button-container">
+          <div>
+            <span>POISE</span><br><br>
+            <span>Autumn/Winter 2019</span>
+          </div>
+          <button class="btn" (click)="onSelect()">Shop</button>
+      </div>
+      <div class="row3" @fadeIn>
+        <a href="">
+          <div class="row3Content" style="background-image: url('assets/pictures/banner3_navy.jpg');"></div>
+        </a>
+        <div class="button-container">
+          <div>
+            <span>POISE</span><br><br>
+            <span>Autumn/Winter 2019</span>
+          </div>
+          <button class="btn" (click)="onSelect()">Explore</button>
+      </div>
+    </div>
+  </div>
+</div>

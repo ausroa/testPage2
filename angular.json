@@ -24,14 +24,28 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/css",
+              "src/templates",
+              "src/js",
+              "src/fonts",
+              "src/images"
             ],
             "styles": [
               "src/styles.scss",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/bootstrap4/css/bootstrap.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "./node_modules/3d-flip-book/js/default-book-view.js",
+              "./node_modules/3d-flip-book/js/jquery.min.js",
+              "./node_modules/3d-flip-book/js/three.min.js",
+              "./node_modules/3d-flip-book/js/pdf.min.js",
+              "./node_modules/3d-flip-book/js/html2canvas.min.js",
+              "./node_modules/3d-flip-book/js/pdf.worker.js",
+              "./node_modules/3d-flip-book/dist/flip-book.js",
+              "./node_modules/3d-flip-book/src/3dflipbook.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

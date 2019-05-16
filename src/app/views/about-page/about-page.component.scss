@@ -1,0 +1,33 @@
+.sign-up-container {
+  text-align: center;
+  position: relative;
+  top: 200px;
+
+  input {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    position: relative;
+  }
+}
+
+.summary-container {
+  position: relative;
+  top: 300px;
+  text-align: center;
+  margin: auto auto;
+  width: 70%;
+}
+
+.flipBook-container {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  top: 300px;
+}
+
+.full-page {
+  height: 100%;
+  width: 100%;
+}

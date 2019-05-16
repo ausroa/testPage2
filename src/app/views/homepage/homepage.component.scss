@@ -1,6 +1,14 @@
 .slideShowContainer{
   width: 100%;
-  height: 100%;
+  height: 136%;
+}
+
+.row1Content {
+  height: 1269px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .row2 {
@@ -8,15 +16,15 @@
   display: inline-block;
   position: relative;
   vertical-align: top;
+  }
 
   .row2Content {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 1080px;
     width: 100%;
   }
-}
 
 .row3 {
   width: 100%;
@@ -28,8 +36,36 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 800px;
+    height: 1080px;
     width: 100%;
+  }
+}
+
+.button-container {
+  position: absolute;
+  top: 160px;
+  width: 100%;
+
+  div {
+    position: absolute;
+    top: 545px;
+    font-weight: bold;
+    color: white;
+    left: 235px;
+    font-size: 25px;
+
+    div {
+      position: relative;
+      top: 10px;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 621px;
+    left: 235px;
+    font-weight: bold;
+    border: none;
   }
 }
 
@@ -38,15 +74,27 @@
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
+  .slideShowContainer{
+    width: 100%;
+    height: 200px;
+  }
+
+  .row1Content {
+    width: 100%;
+    height: 200px;
+  }
+
   .row2 {
     .row2Content {
-      height: 200px;
+      width: 100%;
+      height: 300px;
     }
   }
 
   .row3 {
     .row3Content {
-      height: 200px;
+      width: 100%;
+      height: 300px;
     }
   }
 

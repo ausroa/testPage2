@@ -1,0 +1,33 @@
+.products-container {
+  height: 150%;
+  width: 100%;
+}
+.product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 200px 0 200px;
+
+  div {
+    width: 33%;
+    height: 50%;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+
+    span {
+      padding-left: 10px;
+      text-transform: capitalize;
+    }
+
+    #price {
+      padding-right: 10px;
+      float: right;
+    }
+  }
+  div:hover {
+    z-index: 1;
+    transform: scale(1.25);
+  }
+}
+
