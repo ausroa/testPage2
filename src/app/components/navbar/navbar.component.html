@@ -4,6 +4,6 @@
     <img src="assets/pictures/logo_web-01.png" alt="" width="100px" height="100px">
   </a>
   <div class="navbarLinks">
-    <a href="{{link.router}}" *ngFor="let link of links; index as i">{{link.name}}</a>
+    <button *ngFor="let link of links; index as i" (click)="goToView(link.router)">{{link.name}}</button>
   </div>
 </div>

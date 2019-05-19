@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
 
 @Component({
   selector: 'app-mag-flip-book',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MagFlipBookComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.router.events.subscribe((e) => {
+      console.log(e);
+      if(e instanceof NavigationEnd && e.url === '/about') {
+        window.location.reload();
+      }
+    });
   }
 }
